@@ -1,4 +1,4 @@
-import React, { type FormEvent, useState } from "react";
+import React, {type FormEvent, useState} from "react";
 import Navbar from "~/components/Navbar";
 import FileUploader from "~/components/FileUploader";
 import { usePuterStore } from "~/lib/puter";
@@ -81,7 +81,7 @@ const Upload = () => {
         navigate(`/resume/${uuid}`);
     };
 
-    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    const handleSubmit = (e:FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         const form = e.currentTarget;
