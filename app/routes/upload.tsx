@@ -175,10 +175,11 @@ const Upload = () => {
                             </div>
 
                             <button
-                                className="primaryButton"
+                                className="primary-button"
                                 type="submit"
+                                disabled={isProcessing}
                             >
-                                Analyze Resume
+                                {isProcessing ? "Analyzing..." : "Analyze Resume"}
                             </button>
                         </form>
                     )}
