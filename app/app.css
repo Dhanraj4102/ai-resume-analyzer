@@ -82,11 +82,24 @@ form {
   }
   .resumes-section {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 32px;              /* 🔥 increased gap */
+    grid-template-columns: repeat(1, 1fr);        /* mobile */
+    gap: 20px;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 0 12px;
+  }
+
+  @media (min-width: 640px) {
+    .resumes-section {
+      grid-template-columns: repeat(2, 1fr);      /* tablet */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .resumes-section {
+      grid-template-columns: repeat(3, 1fr);      /* desktop */
+      max-width: 1200px;
+      margin: 0 auto;
+    }
   }
 
   .resume-card {
